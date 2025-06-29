@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz Game App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="start-page">
+    <h1>🌟 Welcome to the Interactive Quiz Game!</h1>
+    <p>Test your web knowledge with fun and interactive questions!</p>
+    <button id="start-btn">Start Quiz</button>
+  </div>
+  <div class="container hidden" id="quiz-wrapper">
+    <h1>🌟 Interactive Quiz Game</h1>
+    <div id="quiz-container">
+      <div id="question-box">
+        <h2 id="question">Loading question...</h2>
+        <div id="options"></div>
+        <input type="text" id="fill-answer" placeholder="Type your answer here" style="display:none;" />
+      </div>
+      <button onclick="nextQuestion()">Next</button>
+    </div>
+    <div id="result" class="hidden"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
